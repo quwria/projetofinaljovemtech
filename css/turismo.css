@@ -1,0 +1,348 @@
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: rgba(222, 231, 235, 0.61);
+      margin: 0;
+      padding: 120px;
+      color: #1e1e1e;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-img {
+      position: relative;
+      flex: 1;
+      min-width: 300px;
+      border-radius: 8px;
+    }
+    
+    .hero-img::before {
+      content: '';
+      position: absolute;
+      left: -16px;
+      bottom: -16px;
+      width: 100%;
+      height: 100%;
+      background-color: #28e49b; /* Cor da moldura */
+      border-radius: 8px;
+      z-index: -1;
+    }
+
+    .hero-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .hero-text a {
+      color: #1a1a1a;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .experiencias {
+      margin-top: 60px;
+    }
+
+    .experiencias h2 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .experiencias p {
+      margin-bottom: 24px;
+      color: #555;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .tag {
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .botao-veja {
+      margin-top: 20px;
+      padding: 8px 20px;
+      border: 2px solid #000;
+      background: #fff;
+      border-radius: 999px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .botao-veja:hover {
+      background-color: #eee;
+    }
+
+  /* header */
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #90bff8;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 32px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+/* Menu Mobile */
+#menu-toggle {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 999px) {
+  .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+  }
+
+  .mobile-menu {
+      display: flex;
+  }
+
+  #menu-toggle:checked ~ .nav-list {
+      transform: translateX(0);
+  }
+}
+
+/* ajuste para não ficar escondido atrás do header */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 8vh);
+  margin-top: 8vh; 
+  padding: 0px;
+
+}
+
+/* roteiro turistico */
+
+
+.roteiro {
+  margin-top: 80px;
+  text-align: center;
+  padding: 8px;
+}
+
+
+.roteiro h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.roteiro p {
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.dias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.dia {
+  background-color: #f0f4f8;
+  border-left: 6px solid #28e49b;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.dia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dia h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #1e1e1e;
+}
+
+.dia ul {
+  padding-left: 18px;
+}
+
+.dia li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+
+
+/* logo */
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 35px;
+  object-fit: cover;
+}
+
+/* mapa */
+
+/* Mapa de Sergipe */
+.mapa-sergipe {
+  margin-top: 60px;
+  text-align: center; /* Centraliza o título */
+}
+
+.mapa-sergipe h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #1e1e1e; /* Cor do título */
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: #f0f4f8;
+  border-left: 6px solid #28e49b; /* Cor verde da borda */
+  margin: 0 auto; /* Centraliza o contêiner */
+  max-width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.map-container iframe:hover {
+  transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .map-container iframe {
+    height: 300px; /* Ajusta a altura do mapa em telas menores */
+  }
+}
+

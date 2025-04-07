@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cultura</title>
+    <link rel="stylesheet" href="/css/index.css"/>
+  <link rel="icon" href="/imagens/Captura de tela 2025-04-06 010420.png" type="image/png">
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">
+          <img src="/imagens/Captura de tela 2025-04-06 010420.png" alt="Logo">
+          SERGITOUR
+        </a>
+        <!-- Checkbox para ativar/desativar o menu -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </label>
+        <ul class="nav-list">
+            <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+            </svg> Início</a></li>
+            <li><a href="historia.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+              <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+            </svg> História</a></li>
+            <li><a href="cultura.html"  class="active"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
+              <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+            </svg> Cultura</a></li>
+            <li><a href="turismo.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+              <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+            </svg> Turismo</a></li>
+            <li><a href="gastronomia.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+              <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+            </svg> Gastronomia</a></li>
+            <li><a href="eventos.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg> Eventos</a></li>
+            <li><a href="cadastrese.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+              <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+              <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+              <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+            </svg> Cadastro</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- <main></main> -->
+
+    <div class="textocultura">
+      <h2 class="tituloprincipal">Cultura de Sergipe</h2>
+      <p class="introducaocultura">Sergipe é um estado repleto de manifestações culturais que expressam a alma do seu povo. Seja por meio das festas populares, da música vibrante ou do artesanato cheio de significado, a cultura sergipana carrega tradições históricas e valores identitários que são passados de geração em geração.</p>
+  
+      <div class="boxcultura">
+        <h3 class="titulosecaocultura">Festas Populares</h3>
+        <ul>
+          <li><strong>São João</strong> – Celebrado com grande entusiasmo, o São João sergipano envolve apresentações de quadrilhas juninas estilizadas, comidas típicas como milho, amendoim, pamonha e canjica, além de muita música nordestina. Cidades como Estância e Areia Branca se destacam pelas tradições centenárias e uso de barcos de fogo.</li>
+          <li><strong>Forró Caju</strong> – É um dos maiores eventos juninos do país, realizado em Aracaju. Durante semanas, o público desfruta de apresentações de artistas renomados do forró tradicional, forró eletrônico e outros ritmos nordestinos, celebrando a cultura local com dança, alegria e cores vibrantes.</li>
+        </ul>
+      </div>
+  
+      <div class="boxcultura">
+        <h3 class="titulosecaocultura">Artesanato Local</h3>
+        <ul>
+          <li><strong>Renda Irlandesa</strong> – Patrimônio imaterial de Sergipe, essa técnica foi trazida por freiras irlandesas e adaptada pelas mulheres de Divina Pastora. As rendas são feitas manualmente com agulha e linha sobre tecidos finos, criando peças de beleza delicada, muito utilizadas em vestuário e decoração.</li>
+          <li><strong>Cerâmica de Laranjeiras</strong> – Produzida de forma artesanal, a cerâmica expressa a história e o cotidiano do povo sergipano. As peças retratam figuras folclóricas, religiosas e elementos da vida rural, sendo muito valorizadas por colecionadores e visitantes.</li>
+        </ul>
+      </div>
+  
+      <div class="boxcultura">
+        <h3 class="titulosecaocultura">Música e Dança</h3>
+        <ul>
+          <li><strong>Bacamarteiros</strong> – Presença marcante nas festas juninas, os bacamarteiros usam roupas coloridas e disparam tiros com bacamartes (espingardas antigas) carregadas com pólvora seca, simbolizando a proteção dos santos juninos e animando os desfiles culturais com barulho e energia.</li>
+          <li><strong>Cacumbi</strong> – De origem afro-brasileira, é uma manifestação que combina dança, música e religiosidade. Os dançarinos, geralmente homens, vestem-se com roupas coloridas, espelhos e fitas, e cantam ao som de instrumentos percussivos em homenagem a santos católicos, especialmente São Benedito.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>
