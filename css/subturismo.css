@@ -5,19 +5,19 @@ body {
     padding: 0;
     color: #1e1e1e;
   }
-  
+
   .container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
   }
-  
+
   h1 {
     font-size: 28px;
     font-weight: 800;
     margin-bottom: 8px;
   }
-  
+
   .rating {
     display: flex;
     align-items: center;
@@ -25,18 +25,18 @@ body {
     font-size: 16px;
     margin-bottom: 8px;
   }
-  
+
   .rating .nota {
     font-size: 20px;
     font-weight: bold;
   }
-  
+
   .subinfo {
     color: #666;
     font-size: 14px;
     margin-bottom: 24px;
   }
-  
+
   .grid.horizontal {
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +45,7 @@ body {
   }
 
   /* comentarios */
-  
+
   .comentarios {
     flex: 1;
     min-width: 300px;
@@ -54,20 +54,20 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
-  
+
   .comentarios h2 {
     font-size: 18px;
     margin-bottom: 16px;
   }
-  
+
   .comentario {
     margin-bottom: 20px;
   }
-  
+
   .comentario .estrelinhas {
     margin: 4px 0;
   }
-  
+
   blockquote {
     margin: 0;
     font-size: 15px;
@@ -75,17 +75,17 @@ body {
     border-left: 4px solid #28e49b;
     padding-left: 10px;
   }
-  
+
   .imagens-lado-direito {
     flex: 1;
     min-width: 300px;
   }
-  
+
   .imagem-principal {
     margin-bottom: 20px;
     text-align: center;
   }
-  
+
   .imagem-principal img {
     width: 100%;
     border-radius: 12px;
@@ -93,18 +93,19 @@ body {
     cursor: pointer;
     transition: transform 0.2s ease;
   }
-  
+
   .imagem-principal img:hover {
     transform: scale(1.05);
   }
-  
-  /* -------- GALERIA -------- */
+
+  /* galeria */
+
   .galeria {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
   }
-  
+
   .galeria img {
     width: 150px;
     height: 100px;
@@ -114,12 +115,12 @@ body {
     cursor: pointer;
     transition: transform 0.2s ease;
   }
-  
+
   .galeria img:hover {
     transform: scale(1.05);
   }
-  
-  /* -------- LIGHTBOX -------- */
+
+  /* lightbox */
   .lightbox {
     position: fixed;
     top: 0;
@@ -132,7 +133,7 @@ body {
     justify-content: center;
     z-index: 999;
   }
-  
+
   .lightbox img {
     width: 920px;
     height: 600px;
@@ -140,11 +141,11 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
-  
+
   .lightbox:target {
     display: flex;
   }
-  
+
   .lightbox .fechar {
     position: absolute;
     top: 30px;
@@ -165,18 +166,18 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
-  
+
   .dicas-uteis h2 {
     font-size: 20px;
     margin-bottom: 16px;
     color: #157a5a;
   }
-  
+
   .dicas-uteis ul {
     list-style: none;
     padding-left: 0;
   }
-  
+
   .dicas-uteis li {
     margin-bottom: 10px;
     font-size: 15px;
@@ -184,11 +185,11 @@ body {
     align-items: center;
     gap: 8px;
   }
-  
+
   .dicas-uteis li span {
     font-size: 18px;
   }
-  
+
   /* informacoes */
 
   .informacoes-historicas {
@@ -198,18 +199,18 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
-  
+
   .informacoes-historicas h2 {
     font-size: 20px;
     margin-bottom: 16px;
     color: #157a5a;
   }
-  
+
   .informacoes-historicas ul {
     list-style: none;
     padding-left: 0;
   }
-  
+
   .informacoes-historicas li {
     margin-bottom: 10px;
     font-size: 15px;
@@ -217,7 +218,7 @@ body {
     align-items: center;
     gap: 8px;
   }
-  
+
   .informacoes-historicas li span {
     font-size: 18px;
   }
@@ -231,18 +232,18 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
-  
+
   .dicas-museu h2 {
     font-size: 20px;
     margin-bottom: 16px;
     color: #157a5a;
   }
-  
+
   .dicas-museu ul {
     list-style: none;
     padding-left: 0;
   }
-  
+
   .dicas-museu li {
     margin-bottom: 10px;
     font-size: 15px;
@@ -250,7 +251,7 @@ body {
     align-items: center;
     gap: 8px;
   }
-  
+
   .dicas-museu li span {
     font-size: 18px;
   }
@@ -264,18 +265,18 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
-  
+
   .dicas-praia h2 {
     font-size: 20px;
     margin-bottom: 16px;
     color: #157a5a;
   }
-  
+
   .dicas-praia ul {
     list-style: none;
     padding-left: 0;
   }
-  
+
   .dicas-praia li {
     margin-bottom: 10px;
     font-size: 15px;
@@ -283,9 +284,8 @@ body {
     align-items: center;
     gap: 8px;
   }
-  
+
   .dicas-praia li span {
     font-size: 18px;
   }
-  
-  
+
