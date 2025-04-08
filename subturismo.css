@@ -1,0 +1,291 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(222, 231, 235, 0.61);
+    margin: 0;
+    padding: 0;
+    color: #1e1e1e;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .rating .nota {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .subinfo {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .grid.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  /* comentarios */
+
+  .comentarios {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f0fdf7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .comentarios h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .comentario {
+    margin-bottom: 20px;
+  }
+
+  .comentario .estrelinhas {
+    margin: 4px 0;
+  }
+
+  blockquote {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    border-left: 4px solid #28e49b;
+    padding-left: 10px;
+  }
+
+  .imagens-lado-direito {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .imagem-principal {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .imagem-principal img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .imagem-principal img:hover {
+    transform: scale(1.05);
+  }
+
+  /* galeria */
+
+  .galeria {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .galeria img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+
+  /* lightbox */
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .lightbox img {
+    width: 920px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .lightbox:target {
+    display: flex;
+  }
+
+  .lightbox .fechar {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+  }
+
+  /* dicas */
+
+  .dicas-uteis {
+    margin-top: 48px;
+    background-color: #f0fdf7;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .dicas-uteis h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #157a5a;
+  }
+
+  .dicas-uteis ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .dicas-uteis li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dicas-uteis li span {
+    font-size: 18px;
+  }
+
+  /* informacoes */
+
+  .informacoes-historicas {
+    margin-top: 48px;
+    background-color: #f0fdf7;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .informacoes-historicas h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #157a5a;
+  }
+
+  .informacoes-historicas ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .informacoes-historicas li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .informacoes-historicas li span {
+    font-size: 18px;
+  }
+
+  /* museu */
+
+  .dicas-museu {
+    margin-top: 48px;
+    background-color: #f0fdf7;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .dicas-museu h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #157a5a;
+  }
+
+  .dicas-museu ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .dicas-museu li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dicas-museu li span {
+    font-size: 18px;
+  }
+
+  /* atalaia */
+
+  .dicas-praia {
+    margin-top: 48px;
+    background-color: #f0fdf7;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .dicas-praia h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #157a5a;
+  }
+
+  .dicas-praia ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .dicas-praia li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dicas-praia li span {
+    font-size: 18px;
+  }
+
